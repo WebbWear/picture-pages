@@ -8,12 +8,12 @@ class PhotoList extends Component {
     render() {
         return (
             <div>
-                <div className="category-title-and-description-container">
+                <div className="category-card">
                     <h3 className="category-title">{data[this.props.match.params.category].title}</h3>
                     <h4 className="category-description">{data[this.props.match.params.category].description}</h4>
                 </div>
                 <div className="photos">
-                    {data[this.props.match.params.category].photos.map((photo, i) => {
+                    {data[this.props.match.params.category].photos.map((photo, i)  => {
                         return (
                             <Link to={`/${this.props.match.params.category}/${i}`} key={i}>
                                 <div className="photo">
