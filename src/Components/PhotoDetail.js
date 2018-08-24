@@ -1,33 +1,23 @@
 import React, { Component } from 'react';
 
-import data from '.Components/data'
-
+import data from '../data.json'
 
 class PhotoDetail extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            list:[]
-        }
-    }
-
-    componentDidMount() {
-        this.setState({ list:data})
-    }
-
     render() {
+        let photo = data[this.props.match.params.category].photos
+        let id = this.props.match.params.id
         return (
-            <div>
-                {this.state.list.map((pandas, i) => {
-                    return <li>
-                        {pandas.title}
-                        <img src={"https://cdn-images-1.medium.com/max/1600/1*i1vVm3EqqDIkyucD0079wg.jpeg"} />
-                    </li>
-                )})
-                
-                
-            </div>
+            <div className="photo-card">
+                <div className="photo-title">
+                    <h3>{photo[id].title}</h3>
+                </div>
+                <div className="photo">
+                    img src={photo[id].imageURL} alt={photo[id].title} />
+                    </div>
+                    <div className="photo-source">
+                        <a href={photo[id].sourceURL}>Source</a>
+                    </div>
+                </div>   
         );
     }
 }

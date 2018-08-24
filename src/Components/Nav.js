@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 class Nav extends Component {
     render() {
         return (
-            <nav>
+            <nav className="Nav">
                <ul>
                    <li><Link to="/CategoryList">Category List</Link></li>
                    <li><Link to="/PhotoList">Photo List</Link></li>
