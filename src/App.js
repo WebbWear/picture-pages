@@ -1,14 +1,12 @@
 import React, { Component } from 'react';
-import './App.css';
-
-
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
-import Nav from './Components/Nav'
+import './App.css';
+
+// import Nav from '.Nav'
 import CategoryList from './Components/CategoryList'
 import PhotoDetail from './Components/PhotoDetail'
 import PhotoList from './Components/PhotoList'
-
 
 class App extends Component {
   render() {
@@ -16,15 +14,14 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="App-header">
-          <Nav/>
+            <h1 className="App-title">Panda Pages</h1>
+            <h3 className="">Created by Jeff Webb</h3>
           </header>
-          <section className="body">
             <Switch>
-              <Route path="/CategoryList" exact component={CategoryList}/>
+              <Route path="/" exact component={CategoryList}/>
               <Route path="/PhotoDetail" exact component={PhotoDetail}/>
               <Route path="/PhotoList" exact component={PhotoList}/>
             </Switch>
-          </section>
         </div>
       </Router>
     );
