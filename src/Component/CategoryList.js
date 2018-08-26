@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom'
 import hobbies from '../Data/hobbies.json'
 
 class CategoryList extends Component {
@@ -7,7 +7,6 @@ class CategoryList extends Component {
     componentDidMount() {
         console.log({ data: hobbies, keys: Object.keys(hobbies) })
     }
-
 
     render() {
         return (

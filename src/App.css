@@ -40,6 +40,8 @@ nav ul {
 
   .body {
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 
   }
 
@@ -54,3 +56,5 @@ nav ul {
     font-size: 2em;
 
   }
+
+  

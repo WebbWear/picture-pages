@@ -33,5 +33,23 @@
           "sourceURL": "https://www.instagram.com/p/Bl09Fg3jM54/?taken-by=ambethia"
         }
       ]
+    },
+    "table-top-games": {
+      "title": "Table Top Games",
+      "description": "Board games and dice!",
+      "photos": [
+        {
+          "title": "Risk",
+          "imageURL":
+          "https://cdn.shopify.com/s/files/1/0405/0381/products/966_54e9f3601b75d9.92561919_Risk_20box_20art_large_bbd24bbd-615c-4834-841f-c893f2ba9c77_1024x1024.jpg?v=1526643219",
+          "sourceURL": "https://www.instagram.com/p/Bl09Fg3jM54/?taken-by=ambethia"
+        },
+        {
+          "title": "Clue",
+          "imageURL":
+              "https://vignette.wikia.nocookie.net/cluecluedo/images/5/5e/Clue-1949.png/revision/latest/scale-to-width-down/300?cb=20140310035127",
+          "sourceURL": "http://cluecluedo.wikia.com/wiki/Clue_(Original)"
+        }
+      ]
     }
   }

@@ -3,9 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import './App.css';
 
-import CategoryList from './Components/CategoryList'
-import PhotoDetail from './Components/PhotoDetail'
-import PhotoList from './Components/PhotoList'
+import CategoryList from './Component/CategoryList';
+import PhotoList from './Component/PhotoList';
+import PhotoDetail from './Component/PhotoDetail';
 
 class App extends Component {
   render() {
@@ -13,14 +13,14 @@ class App extends Component {
       <Router>
         <div className="App">
           <header className="App-header">
-            <h1 className="App-title">Panda Pages</h1>
-            <h3 className="">Created by Jeff Webb</h3>
+            <h1 className="App-title">Things Jason Likes</h1>
+            <h3 className="">Created by Jeff</h3>
           </header>
-            <Switch>
-              <Route path="/" exact component={CategoryList}/>
-              <Route path="/PhotoDetail" exact component={PhotoDetail}/>
-              <Route path="/PhotoList" exact component={PhotoList}/>
-            </Switch>
+          <Switch>
+            <Route path="/" exact component={CategoryList}/>
+            <Route path="/:category" exact component={PhotoList}/>
+            <Route path="/:category/:index" exact component={PhotoDetail}/>
+          </Switch>
         </div>
       </Router>
     );
