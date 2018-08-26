@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom'
+import {Link} from 'react-router-dom';
 
-import data from '../Data/hobbies.json'
+import hobbies from '../Data/hobbies.json';
 
 
 class PhotoList extends Component {
-    
+
     render() {
         const _category = this.props.match.params.category
         const _categoryData = hobbies[_category]
@@ -25,9 +25,9 @@ class PhotoList extends Component {
                             })
                         }
                     </section>
-                  </div>              
+                </div>
             );
-        }    
+        }
     }
 }
 
