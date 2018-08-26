@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import './App.css';
 
-// import Nav from '.Nav'
 import CategoryList from './Components/CategoryList'
 import PhotoDetail from './Components/PhotoDetail'
 import PhotoList from './Components/PhotoList'

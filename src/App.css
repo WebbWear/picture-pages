@@ -38,13 +38,14 @@ nav ul {
     width: 100%;
   }
 
-  .catagories {
+  .body {
     display: flex;
+
   }
 
   .body>section {
     margin: 1px;
-    border: 1em gray solid;
+    border: 1px rgb(192, 190, 190) solid;
     padding: 1em;
 
   }

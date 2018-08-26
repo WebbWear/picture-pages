@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-import data from '../data.json'
+import data from '../Data/hobbies.json'
 
 class PhotoDetail extends Component {
     render() {
